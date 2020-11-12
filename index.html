@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="we know about weather today"/>
+        <meta name="keywords" content="Weather,weather,temperature,Temperature,date,Date"/>
+        <title>Weather Journal</title>
+        <!-- font file -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylsheet"> -->
+        <!-- css files -->
+        <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- javaScript file -->
+        <script src="server.js" type="text/javascript"></script>
+        <script src="app.js" type="text/javascript"></script>
+        
+    </head>
+    <about>
+        <div id = "app" class="pd-y">
+            <div class ="holder headline">
+                <h1 class="mg-b-30 align-center">Weather Journal App</h1>
+            </div>
+            <div class ="holder zip  overflow-hidden mg-b-30">
+                <label for="zip" class="float-left">Enter Zipcode here</label>
+                <input class="input hover-opacity float-left" type="text" id="zip" placeholder="Enter zip code here">
+            </div>
+            <div class ="holder feel overflow-hidden mg-b-30">
+                <label for="feelings" class="float-left">How are you feeling today?</label>
+                <textarea class= "myInput input textarea hover-opacity float-left" id="feelings" placeholder="Enter your feelings here" ></textarea>
+                <input id="generate" type = "button" class="hover-opacity mg-b-30" value="generate"></input>
+            </div>
+            <div class ="holder entry">
+                <div class = "title">Most Recent Entry</div>
+                <div id = "entryHolder">
+                    <div id = "date"></div> 
+                    <div id = "temp"></div>
+                    <div id = "content"></div>
+                </div>
+            </div>
+        </div>
+    </about>
+</html>
